@@ -29,3 +29,5 @@ Static lang
     - Custom built-in object
 
 NO FUNCTION NESTING
+
+Identation baesd. > is used to tell when to look at the next line.
