@@ -1,5 +1,7 @@
+using System.Collections;
+
 namespace dataTypes{
     class list{
-        int x;
+        ArrayList values;
     }
 }

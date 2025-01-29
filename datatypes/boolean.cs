@@ -1,5 +1,5 @@
 namespace dataTypes{
     class boolean{
-        int x;
+        bool x;
     }
 }
