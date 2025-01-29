@@ -2,7 +2,9 @@ using System.Collections;
 
 namespace action{
     class function{
-        ArrayList operations;
+        ArrayList Operations;
+        ArrayList Variables;
+
         int x;
         public int execute(){
             // Execute each one sequentally
