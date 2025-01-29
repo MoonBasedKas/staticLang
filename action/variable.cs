@@ -1,10 +1,11 @@
 namespace action{
     class variable{
+        string name;
         string type;
-        string value;
+        dynamic value;
 
-        public int getValue(){
-            return 0; // Return the variables value.
+        public dynamic getValue(){
+            return this.value; // Return the variables value.
         }
     }
 }
