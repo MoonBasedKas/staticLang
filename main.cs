@@ -7,7 +7,10 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            dynamic x = 1;
+            dynamic y = 2.3;
+            dynamic z = x + y;
+            Console.WriteLine("Hello World " + z);
         }
     }
 }
