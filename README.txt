@@ -12,8 +12,7 @@ The game provides two different interfaces to this interpretor:
 
 #StaticLang 
 Static void uses a language called StaticLang this name may be changed later but 
-is a custom built language that runs on the SLI: StaticLang Interpretor. All it really 
-needs is a tokenizer and be fed those tokens and static lang will execute those tokens.
+is a custom-built language that runs on the SLI: StaticLang Interpreter.
 
 # StaticLang data types
 Static lang 
