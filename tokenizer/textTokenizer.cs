@@ -30,7 +30,6 @@ namespace tokenizer
                 fp.ReadLine();
                 textLines.Add(line);
             }
-            // fp.close();
             return 0;
         }
 

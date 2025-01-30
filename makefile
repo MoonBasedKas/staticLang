@@ -3,7 +3,7 @@ dataTypes := ./dataTypes/boolean.cs ./dataTypes/dictionary.cs ./dataTypes/dictio
 tokenizer := ./tokenizer/textTokenizer.cs 
 
 make:
-	mcs ./main.cs ${tokenizer} ${action} -o SLI.exe
+	mcs ./main.cs ${tokenizer} ${action} -out:SLI.exe
 
 clean:
 	rm ./main.exe
