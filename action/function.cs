@@ -4,10 +4,10 @@ namespace action
 {
     class function
     {
-        ArrayList operations;
-        ArrayList variables;
-        globalEntry world;
-        string name;
+        public ArrayList operations;
+        public ArrayList variables;
+        public globalEntry world;
+        public string name;
 
         int x;
         public int execute()
@@ -19,6 +19,7 @@ namespace action
         private dynamic findReference()
         {
 
+            return 0;
         }
     }
 }

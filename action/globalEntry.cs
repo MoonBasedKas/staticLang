@@ -1,10 +1,12 @@
+using System.Collections;
+
 namespace action
 {
     class globalEntry : function
     {
-        ArrayList libraries;
-        ArrayList functions;
-        function main;
+        public ArrayList libraries;
+        public ArrayList functions;
+        public function main;
 
         public int execute()
         {
@@ -21,18 +23,27 @@ namespace action
         */
         private dynamic findReference(string name)
         {
+            function functionx = null;
+            dynamic res = null;
             // Looks for variable references.
-            for (int i = 0; i < this.variables.size(), i++)
+            for (int i = 0; i < this.variables.Count; i++)
             {
-                if (string.Equals(name, this.variables.get(i))) return this.variables.get(i);
+                if (string.Equals(name, this.variables[i])) {
+                    return this.variables[i];
+                }
             }
 
             // Looks for function references.
-            for (int i = 0; i < this.functions.size(), i++)
+            for (int i = 0; i < this.functions.Count; i++)
             {
-                if (string.Equals(name, this.variables.get(i))) return this.functions.get(i).execute();
+                if (string.Equals(name, this.variables[i])) {
+                    functionx = (function) this.functions[i];
+                    res = functionx.execute();
+                }
             }
             // TODO: Libraries.
+
+            return res;
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using action;
 
 namespace tokenizer
 {
@@ -13,23 +14,24 @@ namespace tokenizer
         // Combines all of the provided files into one big program.
         public textTokenizer(ArrayList files)
         {
-            for (int i = 0; i < files.size(); i++)
+            for (int i = 0; i < files.Count; i++)
             {
-                this.getLines(files.get(i))
+                this.getLines((string)files[i]);
             }
             // TODO tokenize
         }
 
-        private getLines(string fileName)
+        private int getLines(string fileName)
         {
             StreamReader fp = new StreamReader(fileName);
             string line = "";
             while (line != null)
             {
                 fp.ReadLine();
-                textLines.add(line);
+                textLines.Add(line);
             }
-            fp.close()
+            // fp.close();
+            return 0;
         }
 
         private globalEntry tokenizer()
